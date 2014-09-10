@@ -1,14 +1,15 @@
 'use strict';
 
-var test = require('tape');
+var sep = require('path').sep;
 
 var braceExpandJoin = require('require-main')();
+var test = require('tape');
 
 test('braceExpandJoin()', function(t) {
   t.plan(8);
 
   t.strictEqual(
-    braceExpandJoin('*', 'a'), '*/a',
+    braceExpandJoin('*', 'a'), '*' + sep + 'a',
     'should join patterns like path.join().'
   );
 
@@ -23,12 +24,12 @@ test('braceExpandJoin()', function(t) {
   );
 
   t.strictEqual(
-    braceExpandJoin('{a,b}', '*'), '{a/*,b/*}',
+    braceExpandJoin('{a,b}', '*'), '{a' + sep + '*,b' + sep + '*}',
     'should join patterns considering brace expansion.'
   );
 
   t.strictEqual(
-    braceExpandJoin('{a,b/*/../c}', '../*'), '{*,b/*}',
+    braceExpandJoin('{a,b/*/../c}', '../*'), '{*,b' + sep + '*}',
     'should join patterns considering brace expansion and parent directory reference.'
   );
 
