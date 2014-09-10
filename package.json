@@ -1,6 +1,6 @@
 {
   "name": "brace-expand-join",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Join and normalize glob patterns considering brace expansion",
   "repository": "shinnn/node-brace-expand-join",
   "author": {
