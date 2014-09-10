@@ -1,0 +1,48 @@
+{
+  "name": "brace-expand-join",
+  "version": "0.0.0",
+  "description": "Join and normalize glob patterns considering brace expansion",
+  "repository": "shinnn/node-brace-expand-join",
+  "author": {
+    "name": "Shinnosuke Watanabe",
+    "url": "https://github.com/shinnn"
+  },
+  "scripts": {
+    "pretest": "eslint *.js & jscs *.js",
+    "test": "node test.js | tap-spec",
+    "coverage": "istanbul cover test.js",
+    "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/shinnn/node-brace-expand-join/blob/master/LICENSE"
+    }
+  ],
+  "files": [
+    "index.js",
+    "LICENSE"
+  ],
+  "keywords": [
+    "path",
+    "join",
+    "glob",
+    "normalize",
+    "brace",
+    "expand",
+    "expansion"
+  ],
+  "dependencies": {
+    "array-uniq": "^1.0.0",
+    "minimatch": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^0.8.1",
+    "istanbul": "^0.3.2",
+    "istanbul-coveralls": "^1.0.0",
+    "jscs": "^1.6.1",
+    "require-main": "^0.1.1",
+    "tap-spec": "^0.2.1",
+    "tape": "^2.14.0"
+  }
+}
