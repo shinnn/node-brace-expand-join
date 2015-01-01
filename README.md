@@ -1,12 +1,12 @@
 # brace-expand-join
 
-[![Build Status](https://travis-ci.org/shinnn/node-brace-expand-join.svg?branch=master)](https://travis-ci.org/shinnn/node-brace-expand-join)
-[![Build status](https://ci.appveyor.com/api/projects/status/57c2s0eqfq6ro65g)](https://ci.appveyor.com/project/ShinnosukeWatanabe/node-brace-expand-join)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/node-brace-expand-join.svg)](https://coveralls.io/r/shinnn/node-brace-expand-join)
+[![Build Status](https://travis-ci.org/shinnn/node-brace-expand-join.svg)](https://travis-ci.org/shinnn/node-brace-expand-join)
+[![Build status](https://ci.appveyor.com/api/projects/status/57c2s0eqfq6ro65g?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/node-brace-expand-join)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/node-brace-expand-join.svg?style=flat)](https://coveralls.io/r/shinnn/node-brace-expand-join)
 [![Dependency Status](https://david-dm.org/shinnn/node-brace-expand-join.svg)](https://david-dm.org/shinnn/node-brace-expand-join)
 [![devDependency Status](https://david-dm.org/shinnn/node-brace-expand-join/dev-status.svg)](https://david-dm.org/shinnn/node-brace-expand-join#info=devDependencies)
 
-A [Node][node] module to join and normalize glob patterns considering [brace expansion](https://www.gnu.org/software/bash/manual/html_node/Brace-Expansion.html)
+A [Node](http://nodejs.org/) module to join and normalize glob patterns considering [brace expansion](https://www.gnu.org/software/bash/manual/html_node/Brace-Expansion.html)
 
 ```javascript
 var braceExpandJoin = require('brace-expand-join');
@@ -56,5 +56,3 @@ braceExpandJoin('{,a{b,c}}', '{,d{e,f}}', '{,g{h,i}}')
 Copyright (c) 2014 [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT License](./LICENSE).
-
-[node]: http://nodejs.org/
