@@ -8,7 +8,7 @@
     "url": "https://github.com/shinnn"
   },
   "scripts": {
-    "pretest": "eslint *.js & jscs *.js",
+    "pretest": "jscs *.js && eslint *.js",
     "test": "node test.js | tap-spec",
     "coverage": "istanbul cover test.js",
     "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
@@ -33,16 +33,18 @@
     "expansion"
   ],
   "dependencies": {
-    "array-uniq": "^1.0.0",
-    "minimatch": "^1.0.0"
+    "array-uniq": "^1.0.2",
+    "brace-expansion": "^1.1.0",
+    "concat-map": "0.0.1",
+    "sliced": "0.0.5"
   },
   "devDependencies": {
-    "eslint": "^0.8.1",
-    "istanbul": "^0.3.2",
-    "istanbul-coveralls": "^1.0.0",
-    "jscs": "^1.6.1",
-    "require-main": "^0.1.1",
-    "tap-spec": "^0.2.1",
-    "tape": "^2.14.0"
+    "eslint": "^0.11.0",
+    "istanbul": "^0.3.5",
+    "istanbul-coveralls": "^1.0.1",
+    "jscs": "^1.9.0",
+    "tap-spec": "^2.1.2",
+    "tape": "^3.0.3"
+  },
   }
 }
