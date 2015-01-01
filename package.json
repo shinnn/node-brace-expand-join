@@ -46,5 +46,9 @@
     "tap-spec": "^2.1.2",
     "tape": "^3.0.3"
   },
+  "jscsConfig": {
+    "preset": "google",
+    "maximumLineLength": 90,
+    "validateLineBreaks": "LF"
   }
 }
