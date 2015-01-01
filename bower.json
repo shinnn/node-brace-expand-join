@@ -1,0 +1,34 @@
+{
+  "name": "brace-expand-join",
+  "description": "Join and normalize glob patterns considering brace expansion",
+  "keywords": [
+    "path",
+    "join",
+    "glob",
+    "normalize",
+    "brace",
+    "expand",
+    "expansion"
+  ],
+  "main": "index.js",
+  "homepage": "https://github.com/shinnn/node-brace-expand-join",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shinnn/node-brace-expand-join.git"
+  },
+  "authors": [
+    {
+      "name": "Shinnosuke Watanabe",
+      "url": "https://github.com/shinnn"
+    }
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "*.js",
+    "*.json",
+    "*.yml",
+    "coverage",
+    "node_modules"
+  ]
+}

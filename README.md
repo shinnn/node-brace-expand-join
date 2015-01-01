@@ -18,12 +18,19 @@ braceExpandJoin('{a,b,c/d}', '../', 'e'); //=> '{e,c/e}'
 
 ## Installation
 
-[![NPM version](https://badge.fury.io/js/brace-expand-join.svg)](https://www.npmjs.org/package/brace-expand-join)
+[![NPM version](https://img.shields.io/npm/v/brace-expand-join.svg?style=flat)](https://www.npmjs.com/package/brace-expand-join)
+[![Bower version](https://img.shields.io/bower/v/brace-expand-join.svg?style=flat)](https://github.com/shinnn/node-brace-expand-join/releases)
 
-[Install with npm](https://www.npmjs.org/doc/cli/npm-install.html). (Make sure you have installed [Node][node])
+### [npm](https://www.npmjs.com/)
 
-```
+```sh
 npm install --save brace-expand-join
+```
+
+### [bower](http://bower.io/)
+
+```sh
+bower install --save brace-expand-join
 ```
 
 ## API
